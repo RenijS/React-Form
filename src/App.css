@@ -68,7 +68,7 @@ body,
 .column {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.4rem;
   width: 100%;
 }
 
@@ -81,7 +81,6 @@ input {
   padding: 0.5rem;
   border-radius: 6px;
   border: 0.1px gray solid;
-  margin-top: 0.5rem;
 }
 
 input:focus {
