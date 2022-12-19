@@ -1,38 +1,114 @@
+h1 {
+  margin: 0%;
+}
+body,
+#root,
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+}
+
+.App {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: black;
+  color: azure;
+  padding: 0.5rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  color: azure;
+}
+
+.footer a {
+  position: relative;
+  margin-left: 1rem;
   color: white;
+  font-size: 2rem;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.formContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profileForm {
+  padding: 1.5rem;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+input {
+  font-size: 15px;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 0.1px gray solid;
+  margin-top: 0.5rem;
+}
+
+input:focus {
+  border: 0.1px turquoise solid;
+  outline: 2px cornflowerblue solid;
+  transform: scale(1.02);
+}
+
+label {
+  width: max-content;
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem 0;
+  border: 0.1px solid gainsboro;
+  border-radius: 8px;
+  background-color: lightblue;
+  font-weight: 700;
+}
+
+button:active {
+  box-shadow: cornflowerblue 0px 2px 4px;
+}
+
+button:hover,
+label:hover,
+input[type="checkbox"] {
+  cursor: pointer;
 }
